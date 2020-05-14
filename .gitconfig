@@ -1,0 +1,22 @@
+[user]
+    name = Foo Bar
+    email = foobar@gmail.com
+[core]
+    excludesfile = $HOME/.gitignore
+    editor = emacs
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[remote.origin]
+    push = HEAD
+[branch]
+  autosetupmerge = true
+[alias]
+  st = status
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lnm = log HEAD ^master
